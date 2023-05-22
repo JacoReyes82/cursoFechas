@@ -1,0 +1,19 @@
+* {
+    border: 1px solid greenyellow;
+}
+#primeraCaja {
+    background: yellow;
+}
+span {
+    background: orange;
+    border: 3px solid red;
+    font-size: 30px;
+}
+.terceraCaja {
+    background-color: darkgrey;
+    width: 400px;
+    height: 80px;
+}
+ul + ol {
+    background: pink;
+}

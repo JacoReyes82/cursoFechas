@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            height: 600px;
+            padding: 20px;
+            background-color: red;
+            position: relative;
+
+        }
+
+        .title {
+            position: absolute;
+            top: 500px;
+            color: #FFD95A;
+            width: 800px;
+            background: black;
+            display: none;
+        }
+
+        .img:hover ~.title {
+            display: block;
+            top: 560px;
+            transition-delay: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="./images/sushi.jpg" />
+        </div>
+        <div class="title">
+            <h1>El Mejor Sushi del Mundo</h1>
+        </div>
+    </div>
+</body>
+
+</html>

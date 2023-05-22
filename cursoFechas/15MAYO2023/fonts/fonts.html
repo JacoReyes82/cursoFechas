@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js">
+    <style>
+        @font-face {
+            font-family: "Garnet Capitals Black";
+            src: url("./fuentes/GarnetCapitals-Black.ttf");
+        }
+
+
+
+        body {
+            background: #0c1012;
+        }
+
+        h1 {
+            font-family: "Garnet Capitals Black";
+            color: #93E115;
+            text-align: center;
+            border: 3px solid #93E115;
+        }
+
+        .parrafo1 {
+            color: #FFED00;
+            font-family: "Garnet Capitals Black";
+            border: 3px solid #FFED00;
+            padding: 10px;
+        }
+
+        /* Ejemplo Profe   */
+        .container {
+            width: 80%;
+            height: 300px;
+            border: 2px solid #93E115;
+        }
+
+        .parrafo1 {
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 80%;
+                width: 300%
+            }
+
+            to {
+                margin-left: 0%;
+                width: 97%;
+            }
+        }
+
+        .caja {
+            width: 100px;
+            height: 100px;
+            background: #93E115;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        .naranja {
+            background: #FFD95A;
+        }
+
+        .azul {
+            background: #19A7CE;
+        }
+
+        /* Animacion Logo */
+        .logo,
+        .caja {
+            animation-name: logoAnimation;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: initial;
+            width: 200px;
+        }
+
+        @keyframes logoAnimation {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+
+            20%,
+            80% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+        }
+
+        /* Parrafo2 */
+        .container-parrafo {
+            margin-top: 100px;
+            perspective: 200px;
+        }
+
+        .parrafo2 {
+            font-size: 30px;
+            color: #fcd000;
+            font-weight: bold;
+            width: 600px;
+            margin: 0 auto;
+            transform: rotateX(30deg);
+            font-family: "Garnet Capitals Black";
+            animation: animateCrawl 20s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animateCrawl {
+            0% {
+                transform: rotateX(30deg) translateY(400px);
+            }
+
+            100% {
+                transform: rotateX(30deg) translateY(-300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mi ejemplo -->
+    <div>
+        <h1>FONTS -> USAR FUENTES EN CSS - W BARCELONA</h1>
+    </div>
+    <hr>
+    <p class="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a delectus quis velit
+        accusamus, soluta
+        officia sit ipsa minima ullam eius ratione, vitae aliquid perferendis necessitatibus, quae laborum porro
+        voluptatem.</p>
+    <hr>
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+    </div>
+
+    <!-- Ejemplo Profe -->
+
+    <h1>EJEMPLO DE ANIMACION</h1>
+
+    <div class="caja"></div>
+    <div class="caja naranja"></div>
+    <div class="caja azul"></div>
+
+    <div class="container-parrafo">
+        <p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur qui molestias
+            debitis
+            nulla incidunt
+            quisquam, voluptatem vitae inventore fugiat eum, ratione aliquid ipsam magnam ad obcaecati sed omnis amet!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur qui molestias debitis
+            nulla incidunt
+            quisquam, voluptatem vitae inventore fugiat eum, ratione aliquid ipsam magnam ad obcaecati sed omnis amet!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus pariatur qui molestias debitis
+            nulla incidunt
+            quisquam, voluptatem vitae inventore fugiat eum, ratione aliquid ipsam magnam ad obcaecati sed omnis amet!
+        </p>
+    </div>
+
+</body>
+
+</html>

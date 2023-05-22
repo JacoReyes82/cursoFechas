@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClases</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>PSEUDOCLASES</h1>
+    </header>
+
+    <main class="container">
+        <article class="tarjeta">
+            <h2>:active</h2>
+            <div class="cajaActive">
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/:active" target="_blank">Clase ::Active</a>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:link</h2>
+            <div class="cajaLink">
+                <a href="https://www.game.es/" target="_blank">Ir a tienda Game</a><br><br>
+                <a href="https://accounts.zoho.eu/signin?service_language=es&servicename=VirtualOffice&signupurl=https://www.zoho.com/es-xl/mail/zohomail-pricing.html&serviceurl=https://mail.zoho.eu"
+                    target="_blank">Ir al Correo</a>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:visited</h2>
+            <div class="cajaVisited">
+                <a href="https://developer.mozilla.org/es/docs/Web/CSS/:active" target="_blank">Clase ::Visited</a>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:hover</h2>
+            <div class="cajaHover">
+
+            </div>
+        </article>
+
+    </main>
+    <div class="container">
+        <article class="tarjeta">
+            <h2>:first Child</h2>
+            <div class="cajaChild">
+                <p>Parrafo numero 1</p>
+                <p>Parrafo numero 2</p>
+                <p>Parrafo numero 3</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:last-of-type</h2>
+            <div class="cajaLast">
+                <p>Primer Child</p>
+                <p>Segundo Child</p>
+                <p>Tercer Child</p>
+                <p>Cuarto Child</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:nth-child</h2>
+            <div class="cajaNthChild">
+                <p>Primer Child</p>
+                <p>Segundo Child</p>
+                <p>Tercer Child</p>
+                <p>Cuarto Child</p>
+                <p>Quinto Child</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:nth-of-type</h2>
+            <div class="cajaNthType">
+                <p>Primer Child</p>
+                <p>Segundo Child</p>
+                <p>Tercer Child</p>
+                <p>Cuarto Child</p>
+                <p>Quinto Child</p>
+            </div>
+        </article>
+    </div>
+
+    <div class="container">
+        <article class="tarjeta">
+            <h2>:focus</h2>
+            <div class="cajaFocus">
+                <input class="inputAmarillo" value="Voy a ser de color amarillo cuando enfoque.">
+                <input class="inputAzul" value="Voy a ser de color azul cuando enfoque.">
+                <input type="text" class="inputRojo" value="Voy a ser de color verde cuando enfoque.">
+                <input class="inputVerde" value="Voy a ser de color rojo cuando enfoque.">
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:last-of-type</h2>
+            <div class="cajaLast">
+                <p>Primer Elemento</p>
+                <p>Segundo Elemento</p>
+                <p>Tercer Elemento</p>
+                <p>Cuarto Elemento</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:nth-child</h2>
+            <div class="cajaNthChild">
+                <p>Primer Child</p>
+                <p>Segundo Child</p>
+                <p>Tercer Child</p>
+                <p>Cuarto Child</p>
+                <p>Quinto Child</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <h2>:nth-of-type</h2>
+            <div class="cajaNthType">
+                <p>Primer Child</p>
+                <p>Segundo Child</p>
+                <p>Tercer Child</p>
+                <p>Cuarto Child</p>
+                <p>Quinto Child</p>
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+
+    <form action="#">
+        <fieldset id="shipping">
+            <legend>Shipping address</legend>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Address" />
+            <input type="text" placeholder="Zip Code" />
+        </fieldset>
+        <br />
+        <fieldset id="billing">
+            <legend>Billing address</legend>
+            <label for="billing-checkbox">Same as shipping address:</label>
+            <input type="checkbox" id="billing-checkbox" checked />
+            <br />
+            <input type="text" placeholder="Name" disabled />
+            <input type="text" placeholder="Address" disabled />
+            <input type="text" placeholder="Zip Code" disabled />
+        </fieldset>
+    </form>
+
+
+    <script>
+        // Wait for the page to finish loading
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+                // Attach `change` event listener to checkbox
+                document.getElementById("billing-checkbox").onchange = toggleBilling;
+            },
+            false
+        );
+
+        function toggleBilling() {
+            // Select the billing text fields
+            const billingItems = document.querySelectorAll('#billing input[type="text"]');
+
+            // Toggle the billing text fields
+            billingItems.forEach((item) => {
+                item.disabled = !item.disabled;
+            });
+        }
+    </script>
+</body>
+
+</html>

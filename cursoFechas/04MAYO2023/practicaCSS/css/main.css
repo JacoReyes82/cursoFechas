@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.containerPrincipal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 4px solid #8B40F3;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FAFBFD;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav img {
+    float: left;
+}
+nav li {
+    display: inline;
+    justify-content: center;
+    margin-right: 60px;
+    font-weight: bold;
+
+}
+nav li:hover {
+    border-bottom: 4px solid #8B40F3;
+
+}
+/* Seccion Principal */
+.principal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    font-size: 30px;
+}
+.infoPrincipal {
+    width: 49%;
+    margin-top: 2rem;
+    text-align: center;
+}
+.infoPrincipal p {
+    margin-top: 2rem;
+    text-align: start;
+    margin-left: 2rem;
+}
+.imagenPrincipal {
+    width: 49%;
+}
+.imagenPrincipal img {
+    width: 700px;
+}
+/* Seccion Blog */
+.blog {
+    background: #FAFBFD;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+}
+.blog h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.blog p {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    text-align: justify;
+}
+.blog  a {
+    text-decoration: none;
+    color: white;
+    background: #8B40F3;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.blogContenido {
+    padding: 2rem 0;
+}
+.blogContenido2 {
+    background: white;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background: #6C55F5;
+    color: white;
+    padding: 1.6rem;
+}
+.infoFooter, .mapaFooter {
+    margin-top: 1.2rem 0;
+}
+.infoFooter span {
+    color: yellow
+}
