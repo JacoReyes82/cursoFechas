@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background: red;
+    height: 120px;
+}
+aside {
+    background: yellow;
+    height: 500px;
+    width: 30%;
+    float: left;
+}
+section {
+    background: blue;
+    height: 500px;
+}
+footer {
+    background: orange;
+    height: 130px;
+}
