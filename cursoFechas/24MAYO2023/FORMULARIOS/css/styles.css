@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background: #146C94;
+}
+
+.formulario {
+    margin-left: 40%;
+    margin-top: 150px;
+    width: 260px;
+    padding: 50px;
+    background-color: #DDE6ED;
+}
+
+.formulario input {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #AEE2FF;
+    border-color: #FFB84C;
+}
+
+#lang {
+    padding: 10px;
+    width: 250px;
+    margin: 5px 0;
+    background-color: #AEE2FF;
+    border-color: #FFB84C;
+}
+
+button {
+    padding: 10px;
+    width: 250px;
+    background: #FFB84C;
+}
+
+button:hover {
+    background-color: #16FF00;
+    color: white;
+}
